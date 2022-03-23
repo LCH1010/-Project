@@ -1,0 +1,46 @@
+{
+  "Radio" : [
+    {
+      "Channel": "1",
+      "Url" : "http://www.hifimp.com:9000/stream8",
+      "ThumbnailText" : "CBS",
+      "FrequencyText" : "89.1",
+      "Glide" : "https://resources.tidal.com/images/255d674a/a4a8/4043/934b/57c4a793394e/80x80.jpg"
+    },
+    {
+      "Channel": "2",
+      "Url" : "http://119.200.131.11:1935/KBCFM/kbcra_aac/chunklist_w878168627.m3u8",
+      "ThumbnailText" : "KBS 광주방송",
+      "FrequencyText" : "89.7",
+      "Glide" : "https://resources.tidal.com/images/93e00e29/4813/4d80/b334/ee49883c2f0a/80x80.jpg"
+    },
+    {
+      "Channel": "3",
+      "Url" : "http://www.hifimp.com:9000/stream1",
+      "ThumbnailText" : "KBS",
+      "FrequencyText" : "91.9",
+      "Glide" : "https://resources.tidal.com/images/a894476f/5836/4f4a/8d52/bd7b0ca56824/80x80.jpg"
+    },
+    {
+      "Channel": "4",
+      "Url" : "http://tbs.hscdn.com/tbsradio/fm/playlist.m3u8",
+      "ThumbnailText" : "TBS",
+      "FrequencyText" : "93.1",
+      "Glide" : "https://resources.tidal.com/images/63b70196/9669/4f47/a018/1c1b4df7890c/80x80.jpg"
+    },
+    {
+      "Channel": "5",
+      "Url" : "http://aac.cbs.co.kr:1935/cbscmc/_definst_/cbscmc_96k.stream/playlist.m3u8",
+      "ThumbnailText" : "CBS_JOY4U_ADTS",
+      "FrequencyText" : "93.9",
+      "Glide" : "https://resources.tidal.com/images/c36fbc89/8eef/4851/89a4/4120ad39367b/80x80.jpg"
+    },
+    {
+      "Channel": "6",
+      "Url" : "http://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8",
+      "ThumbnailText" : "국악FM_ADTS",
+      "FrequencyText" : "94.5",
+      "Glide" : "https://resources.tidal.com/images/5760698a/ccf1/4101/98e5/60fd66fb86cb/80x80.jpg"
+    }
+  ]
+}

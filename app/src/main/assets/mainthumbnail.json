@@ -1,0 +1,19 @@
+{
+  "mainthumbnail" : [
+    {
+      "Channel": "1",
+      "ThumbnailText" : "RADIO",
+      "Glide" : "https://resources.tidal.com/images/255d674a/a4a8/4043/934b/57c4a793394e/80x80.jpg"
+    },
+    {
+      "Channel": "2",
+      "ThumbnailText" : "EXO_Podcast",
+      "Glide" : "https://resources.tidal.com/images/93e00e29/4813/4d80/b334/ee49883c2f0a/80x80.jpg"
+    },
+    {
+      "Channel": "3",
+      "ThumbnailText" : "Podcast",
+      "Glide" : "https://resources.tidal.com/images/a894476f/5836/4f4a/8d52/bd7b0ca56824/80x80.jpg"
+    }
+  ]
+}

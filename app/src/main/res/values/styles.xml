@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- No Title Bar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- No 상태 Bar-->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="font_family_regular">
+        <item name="android:fontFamily">rose_regular_und</item>
+    </style>
+
+    <style name="font_family_bold">
+        <item name="android:fontFamily">rose_bold_und</item>
+    </style>
+
+    <style name="font_family_extra_bold">
+        <item name="android:fontFamily">rose_bold_und</item>
+    </style>
+
+    <style name="font_family_light">
+        <item name="android:fontFamily">rose_light_und</item>
+    </style>
+
+
+</resources>
+
+    <!--
+    <상태바, 타이틀바 없애기>
+    상태바 : 화면 최상단
+    타이틀바 : 자신이 만든 APP의 제목을 나타내는 바
+    -->

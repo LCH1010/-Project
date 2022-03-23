@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    android:orientation="vertical"
+    tools:context=".fragment.RadioFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/fm_fre_on" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="181dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/imageView2"
+        app:srcCompat="@drawable/set_vu_img1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="570dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_btn_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="89.1"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rb_btn_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="89.7"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rb_btn_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="91.9"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rb_btn_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="93.1"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rb_btn_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="93.9"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rb_btn_six"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="94.5"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/ib_prev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@drawable/arrow_left" />
+
+        <ImageButton
+            android:id="@+id/ib_PlayPause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button2"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/ib_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <!--    즐겨찾기-->
+
+    <ImageView
+        android:id="@+id/ib_Heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/music_ico_heart_off"
+        android:layout_below="@+id/radioGroup"
+        android:layout_toRightOf="@id/imageView3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="580dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/blackBar">
+
+        <RelativeLayout
+            android:id="@+id/rl_loading_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_thumbnail"
+            />
+
+        <TextView
+            android:id="@+id/tv_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_frequency"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_thumbnail"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/b_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동 NEXT"
+        android:layout_below="@+id/imageView2"
+        android:layout_toRightOf="@id/radioGroup"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:layout_below="@+id/b_handler"
+        android:layout_toRightOf="@id/radioGroup"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:layout_below="@+id/start"
+        android:layout_toRightOf="@id/radioGroup"
+        android:layout_marginLeft="15dp"
+        />
+
+
+
+</RelativeLayout>
